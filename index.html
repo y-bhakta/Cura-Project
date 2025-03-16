@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Essential Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cura - Your Trusted Healthcare Partner</title>
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="./homepage/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./homepage/assets/css/homepage.css" />
+
+  <!-- Icon Libraries -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+  <!-- Main Navigation -->
+  <nav class="navbar navbar-expand-lg shadow-sm border-bottom border-black">
+    <div class="container">
+      <!-- Changed from container-fluid -->
+      <!-- Brand Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="./assets/Images/logo.png" alt="Cura Healthcare Logo" height="30" />
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Schedule/schedule.html">Schedule</a>
+            <!-- Fixed capitalization -->
+          </li>
+          <!-- Authentication -->
+          <li class="nav-item ms-2">
+            <a class="btn sign-in-btn" href="#"  data-bs-toggle="modal" data-bs-target="#contactModal">Sign In</a>
+          </li>
+          <!-- Utility Icons -->
+          <li class="nav-item mx-2">
+            <a href="./chat/chat.html" class="nav-link">
+              <div class="icon-circle">
+                <img src="./assets/Images/Group 78.png" alt="User Profile" />
+              </div>
+            </a>
+          </li>
+          <li class="nav-item mx-2">
+            <a href="#" class="nav-link">
+              <div class="icon-circle">
+                <i class="fa-solid fa-question"></i>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item mx-2">
+            <a href="#" class="nav-link">
+              <div class="icon-circle">
+                <i class="fa-solid fa-bell"></i>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-content position-relative">
+        <!-- Hero Image -->
+        <img src="./assets/Images/homepage-banner.png" class="img-fluid" alt="Healthcare Dashboard Preview" />
+
+        <!-- Testimonial Quote -->
+        <p class="testimonial-text position-absolute top-50 end-0 translate-middle-y fst-italic">
+          "This platform has completely changed how I manage my healthcare!
+          Booking appointments and accessing my test results is so easy now. I
+          finally feel in control of my health."
+          <span class="d-block mt-2 fst-normal">— Emily R., 34</span>
+        </p>
+
+        <!-- Slider Navigation -->
+        <div class="hero-nav">
+          <button class="nav-btn position-absolute top-50 start-0 translate-middle-y ms-5">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <button class="nav-btn position-absolute top-50 end-0 translate-middle-y me-5">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Symptom Checker Section -->
+  <section class="symptom-checker-section py-5" style="background-color: var(--gray-light)">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <!-- Changed from col-lg-12 -->
+          <div class="checker-card p-4 bg-white rounded-3">
+            <div class="row align-items-center g-4">
+              <!-- Content Area -->
+              <div class="col-lg-7">
+                <h2 class="mb-4" style="color: #06515d">
+                  <i class="bi bi-heart-pulse me-2"></i>
+                  Not feeling well?
+                </h2>
+                <p class="lead mb-4">
+                  Our smart Symptom Checker helps you understand your symptoms
+                  and guides you toward the right care. Get instant advice or
+                  connect with a healthcare provider for expert support.
+                </p>
+                <a href="./symAccordian/symAccordian.html" class="btn btn-lg text-white px-4"
+                  style="background-color: #06515d">
+                  <i class="bi bi-search me-2"></i>
+                  Check Symptoms Now
+                </a>
+              </div>
+
+              <!-- Image Area -->
+              <div class="col-lg-5">
+                <div class="image-wrapper rounded-3 overflow-hidden">
+                  <img src="./assets/Images/homepage-sec2.png" class="img-fluid w-100"
+                    alt="Symptom Checker Interface" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-section py-5">
+    <div class="container-fluid">
+      <div class="row mx-2 mt-2">
+        <!-- Card 1 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card border-0" style="width: 304px; height: 375px; background-color: #cecece">
+            <h5 class="card-title mt-3 text-center">Our Doctor</h5>
+            <img src="./assets/Images/homepage-ourdoc-image.png" class="" alt="Primary Care"
+              style="margin-top: 100px" />
+            <div
+              class="card-body border-top border-black d-flex justify-content-center align-items-d-flex justify-content-center align-items-center pt-0">
+              <a href="./about/about.html" class="btn text-white" style="background-color: #06515d">
+                View Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card border-0" style="width: 304px; height: 375px; background-color: #cecece">
+            <h5 class="card-title mt-3 text-center">Ask Us</h5>
+            <img src="./assets/Images/homepage-askus-image.png" class="img-fluid" alt="Primary Care"
+              style="margin-top: 9px" />
+            <div
+              class="card-body border-top border-black d-flex justify-content-center align-items-d-flex justify-content-center align-items-center pt-0">
+              <a href="./secMsg/secMsg.html" class="btn text-white" style="background-color: #06515d">
+                Chat Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card border-0" style="width: 304px; height: 375px; background-color: #cecece">
+            <h5 class="card-title mt-3 text-center">Book Appointment</h5>
+            <img src="./assets/Images/homepage-apportment-image.png" class="" alt="Primary Care"
+              style="margin-top: 48px" />
+            <div
+              class="card-body border-top border-black d-flex justify-content-center align-items-d-flex justify-content-center align-items-center pt-0">
+              <a href="./Schedule/schedule.html" class="btn text-white" style="background-color: #06515d">
+                Book Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card border-0" style="width: 304px; height: 375px; background-color: #cecece">
+            <h5 class="card-title mt-3 text-center">Health Map</h5>
+            <img src="./assets/Images/homepage-healthmap-image.png" class="" alt="Primary Care"
+              style="margin-top: 18px" />
+            <div
+              class="card-body border-top border-black d-flex justify-content-center align-items-d-flex justify-content-center align-items-center pt-0">
+              <a href="./healthMap/healthMap.html" class="btn text-white" style="background-color: #06515d">
+                View Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- News Section -->
+  <section class="news-section py-5">
+    <div class="container">
+      <h2 class="text-start mb-5" style="color: #06515d">News</h2>
+      <div class="row g-4 justify-content-center">
+        <!-- News Cards -->
+        <div class="col-lg-4 col-md-6">
+          <div class="news-card">
+            <div class="news-card-inner">
+              <div class="news-card-front">
+                <h3>Revolutionary Health Pathway Planner Now Live</h3>
+              </div>
+              <div class="news-card-back">
+                <p>
+                  Take control of your health like never before with our
+                  innovative Health Pathway Planner. Visualize every step of
+                  your journey, from diagnosis to recovery, and stay informed
+                  with real-time updates.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="news-card">
+            <div class="news-card-inner">
+              <div class="news-card-front">
+                <h3>
+                  Secure Messaging Feature Empowers Patient-Doctor
+                  Communication
+                </h3>
+              </div>
+              <div class="news-card-back">
+                <p>
+                  Say goodbye to long waits for follow-ups! Our encrypted
+                  messaging system keeps you connected with your healthcare
+                  provider, ensuring quick and secure communication anytime.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="news-card">
+            <div class="news-card-inner">
+              <div class="news-card-front">
+                <h3>One-Tap Appointment Booking Simplifies Scheduling</h3>
+              </div>
+              <div class="news-card-back">
+                <p>
+                  Never miss an appointment again! Our one-tap booking system
+                  integrates with your calendar and sends you reminders,
+                  making scheduling and managing your healthcare stress-free.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="why-choose-section py-5">
+    <div class="container">
+      <h2 class="text-start mb-4" style="color: #06515d">Why Choose Us?</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="choose-card p-4 rounded-3" style="background-color: var(--gray-light)">
+            <p class="lead mb-0">
+              At Cura, we’re redefining the way you experience healthcare. Our
+              platform is built with one goal in mind: to make your health
+              journey simple, stress-free, and truly patient-centered. From
+              easy appointment scheduling to a personalized care dashboard, we
+              provide everything you need to manage your healthcare in one
+              convenient place. With features like our unique Health Pathway
+              Planner, secure messaging, and smart symptom checker, you’ll
+              always stay informed, connected, and in control. Choose us for a
+              seamless, empowering healthcare experience tailored just for
+              you.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4" style="background-color: var(--gray-light)">
+    <!-- Social Media Icons -->
+    <div class="container mb-4">
+      <div class="social-icons d-flex justify-content-center gap-4">
+        <!-- Facebook -->
+        <a href="#" class="social-link">
+          <div class="icon-circle">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+        </a>
+        <!-- Twitter -->
+        <a href="#" class="social-link">
+          <div class="icon-circle">
+            <i class="fa-brands fa-x-twitter"></i>
+          </div>
+        </a>
+        <!-- Instagram -->
+        <a href="#" class="social-link">
+          <div class="icon-circle">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </a>
+        <!-- YouTube -->
+        <a href="#" class="social-link">
+          <div class="icon-circle">
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </a>
+        <!-- WhatsApp -->
+        <a href="#" class="social-link">
+          <div class="icon-circle">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="container mb-4">
+      <div class="row g-4">
+        <!-- About Cura -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-3">About Cura</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-muted">About Us</a></li>
+            <li><a href="#" class="text-muted">Our Mission & Vision</a></li>
+            <li><a href="#" class="text-muted">Blog</a></li>
+            <li><a href="#" class="text-muted">Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- Patient Resources -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-3">Patient Resources</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-muted">Help Center</a></li>
+            <li><a href="#" class="text-muted">FAQs</a></li>
+            <li><a href="#" class="text-muted">Privacy Policy</a></li>
+            <li><a href="#" class="text-muted">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <!-- Features -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-3">Features</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="text-muted">Smart Navigation Assistant</a>
+            </li>
+            <li>
+              <a href="#" class="text-muted">One-Tap Appointment Booking</a>
+            </li>
+            <li><a href="#" class="text-muted">Health Pathway Planner</a></li>
+            <li><a href="#" class="text-muted">Secure Messaging</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-3">Contact Us</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="text-muted">Email: support@cura.com</a>
+            </li>
+            <li><a href="#" class="text-muted">Phone: 1-800-123-4567</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="container">
+      <p class="text-center text-muted small mb-0">
+        &copy; 2025 Cura. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Modal Structure -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="modalLabel">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <!-- Header Section -->
+        <div class="modal-header text-white" style="background-color: #06515d;">
+          <h2 class="modal-title fs-5" id="modalLabel">Contact Information</h2>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- Form Body -->
+        <form id="contactForm" novalidate>
+          <div class="modal-body">
+            <div class="row g-3">
+              <!-- Personal Information -->
+              <div class="col-md-6">
+                <label for="fullName" class="form-label">Full Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="fullName" required pattern="[A-Za-z ]{3,}">
+                <div class="invalid-feedback">Please enter a valid name (min 3 characters)</div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback">Please provide a valid email</div>
+              </div>
+
+              <!-- Contact Details -->
+              <div class="col-12">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" pattern="[0-9]{10}">
+                <div class="invalid-feedback">10-digit number required</div>
+              </div>
+
+              <!-- Message Section -->
+              <div class="col-12">
+                <label for="message" class="form-label">Your Message <span class="text-danger">*</span></label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+                <div class="invalid-feedback">Please write your message</div>
+              </div>
+
+              <!-- Additional Options -->
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="newsletter">
+                  <label class="form-check-label" for="newsletter">
+                    Subscribe to newsletter
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn text-white" style="background-color: #06515d;">Submit Form</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Scripts -->
+  <script src="./homepage/assets/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Validation Script -->
+<script>
+  (() => {
+    'use strict'
+    const forms = document.querySelectorAll('.needs-validation')
+    
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+        form.classList.add('was-validated')
+      }, false)
+    })
+  })()
+  </script>
+</body>
+
+</html>
